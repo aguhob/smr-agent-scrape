@@ -14,6 +14,13 @@ from smr_scraper import run_scraper
 
 # Fix Unicode issues for PDF export
 def clean_text(text):
+    try:
+        return str(text).encode("latin1", "replace").decode("latin1")
+    except Exception:
+        return "[Text could not be cleaned]"
+
+# Fix Unicode issues for PDF export
+def clean_text(text):
     return text.encode("latin1", "replace").decode("latin1")
 
 # Check if scraped file is fresh
