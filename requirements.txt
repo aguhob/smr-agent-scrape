@@ -1,6 +1,9 @@
 streamlit
+openai
 faiss-cpu
-sentence-transformers
 pandas
-beautifulsoup4
+numpy
+fpdf
 requests
+beautifulsoup4
+python-dotenv
